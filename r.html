@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> new document </title>
+    <meta name="generator" content="editplus" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <style type="text/css">
+        div{ width:200px; height:200px; background:#9CF; display:none;}
+        .bg{ background:#33FF00}
+    </style>
+    <script src="http://cloud.xing-xing.com/jquery.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(function(){
+            $("ul li").hover(function(){
+                $(this).addClass('bg')
+            },function(){
+                $(this).removeClass('bg');
+            })
+            $("ul li").click(function() {
+                $(this).removeClass('bg').unbind('hover');
+                $(this).find("div").slideDown();
+            });
+
+        })
+    </script>
+</head>
+<body >
+<ul>
+    <li>111111<div></div></li>
+    <br />
+    <li>222222<div></div></li>
+    <br />
+    <li>333333<div></div></li>
+    <br />
+    <li>444444<div></div></li>
+    <br />
+    <li>555555<div></div></li>
+</ul>
+</body>
+</html>
+$(".menu-items ul li").hover(function(){
+var nu = $(this).attr("data-id");
+var css = "orderMana"+nu;
+var sty = "active"+nu;
+console.log("css");
+$(this).find('.theItem').removeClass(css);
+$(this).find('.theItem').addClass(sty);
+$(this).find("a").css("color","#fff")
+},function(){
+var nu = $(this).attr("data-id");
+var css = "orderMana"+nu;
+var sty = "active"+nu;
+$(this).find('.theItem').addClass(css);
+$(this).find('.theItem').removeClass(sty);
+$(this).find("a").css("color","#000")
+})

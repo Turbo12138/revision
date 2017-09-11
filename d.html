@@ -1,0 +1,53 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <script type="text/javascript">
+        function toLogin()
+        {
+            if (qform.loginCode.value == "")
+            {
+                alert("请录入登录账号!");
+                return;
+            }
+            if (qform.loginPass.value == "")
+            {
+                alert("请录入登录密码!");
+                return;
+            }
+            qform.operBj.value = "login";
+            qform.submit();
+        }
+    </script>
+</head>
+<body onkeydown="if(event.keyCode==13){toLogin();}">
+<form name="qform" id="qform" method="post">
+    <img src="images/xinlelg.png" class="leLogo"/>
+    <img src="images/zhidinghuo.png" class="caigouLogo"/>
+    <div class="load">
+        <img src="images/qiye.png" class="mark" />
+        <div class="bor">
+            <h1 class="user-load">鑫乐医疗订货系统</h1>
+            <p class="message"><%=errMsg %></p>
+            <div class="f-cb addbac" style=" margin-top: 20px;">
+                <div class="f-cb"><span style="float:left;margin-top: 30px;font-size: 14px;margin-left:20px;">用户名</span><input class="inp" type="text" id="loginCode" name="loginCode" runat="server" placeholder="请输入用户名"  /></div>
+                <div class="f-cb"><span style="float:left;margin-top: 30px;font-size: 14px;margin-left:20px;">密&ensp;&ensp;码</span><input class="inp" type="password" id="loginPass" name="loginPass" runat="server" placeholder="请输入密码"  /></div>
+                <%--  <label class="remember-me"><input id="chk_rember" type="checkbox" class="rem" name="chk_rember">记住我</label>--%>
+                <%-- <a class="forget" href="javascript:void(0);"  onclick="qform.reset()">重置</a>--%>
+                <div class="f-cb" style="height:104px;width:358px;background:#fff;"><a class="login" href="javascript:void(0);" onclick="toLogin()">登录</a></div>
+                <input type="hidden" id="operBj" value="" runat="server" />
+            </div>
+        </div>
+        <div class="code">
+            <img src="images/code.png" />
+            <p>关注官方微信</p>
+        </div>
+        <p class="comp">技术支持：宝智软件科技有限公司</p>
+    </div>
+</form>
+</body>
+</html>

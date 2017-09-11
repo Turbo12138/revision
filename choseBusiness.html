@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/choseBusiness.css">
+    <title></title>
+</head>
+<body>
+<div class="choseBusiness">
+    <p>选择行业</p>
+    <ul class="f-cb">
+        <li data-id="1">
+            <a class="chose1"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="2">
+            <a class="chose2"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="3">
+            <a class="chose3"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="4">
+            <a class="chose4"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="5">
+            <a class="chose5"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="6">
+            <a class="chose6"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="7">
+            <a class="chose7"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="8">
+            <a class="chose8"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="9">
+            <a class="chose9"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="10">
+            <a class="chose10"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="11">
+            <a class="chose11"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="12">
+            <a class="chose12"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="13">
+            <a class="chose13"></a>
+            <h1>食品</h1>
+        </li>
+        <li data-id="14">
+            <a class="chose14"></a>
+            <h1>食品</h1>
+        </li>
+    </ul>
+</div>
+<!--<div class="choseBusiness">-->
+    <!--<p>选择行业</p>-->
+    <!--<ul class="f-cb">-->
+        <!--<li>-->
+            <!--<a class="active1"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active2"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active3"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active4"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active5"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active6"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active7"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active8"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active9"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active10"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active11"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active12"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active13"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a class="active14"></a>-->
+            <!--<h1>食品</h1>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</div>-->
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    $('.choseBusiness ul li').mouseenter(function(){
+        var nu = $(this).attr("data-id");
+        var css = "chose"+nu;
+        var sty = "active"+nu;
+        $(this).find('a').removeClass(css);
+        $(this).find('a').addClass(sty);
+        $(this).find("h1").css("color","#2DE0E0")
+    });
+    $('.choseBusiness ul li').mouseleave(function(){
+        var nu = $(this).attr("data-id");
+        var css = "chose"+nu;
+        var sty = "active"+nu;
+        $(this).find('a').addClass(css);
+        $(this).find('a').removeClass(sty);
+        $(this).find("h1").css("color","#000")
+    })
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu-item-ul li').click(function(){
+            var a = $(this);
+            if(!a.hasClass("background-color")){
+                $('.menu-item-ul li').removeClass("background-color");
+                $('.menu-item-ul li').find("a").css("color","#000")
+                a.addClass("background-color")
+                a.find("a").css("color","#fff")
+            }
+        });
+        $(".menu-items ul li").click(function(){
+
+            $(".case1").find('.theItem').removeClass("active1");
+            $(".case2").find('.theItem').removeClass("active2");
+            $(".case3").find('.theItem').removeClass("active3");
+            $(".case4").find('.theItem').removeClass("active4");
+            $(".case5").find('.theItem').removeClass("active5");
+            $(".case6").find('.theItem').removeClass("active6");
+            $(".case7").find('.theItem').removeClass("active7");
+            $(".case8").find('.theItem').removeClass("active8");
+            $(".case9").find('.theItem').removeClass("active9");
+            $(".case10").find('.theItem').removeClass("active10");
+            $(".case11").find('.theItem').removeClass("active11");
+            $(".case1").find('.theItem').addClass("orderMana1");
+            $(".case2").find('.theItem').addClass("orderMana2");
+            $(".case3").find('.theItem').addClass("orderMana3");
+            $(".case4").find('.theItem').addClass("orderMana4");
+            $(".case5").find('.theItem').addClass("orderMana5");
+            $(".case6").find('.theItem').addClass("orderMana6");
+            $(".case7").find('.theItem').addClass("orderMana7");
+            $(".case8").find('.theItem').addClass("orderMana8");
+            $(".case9").find('.theItem').addClass("orderMana9");
+            $(".case10").find('.theItem').addClass("orderMana10");
+            $(".case11").find('.theItem').addClass("orderMana11");
+            var nu = $(this).attr("data-id");
+            var css = "orderMana"+nu;
+            var sty = "active"+nu;
+            console.log("css");
+            $(this).find('.theItem').removeClass(css);
+            $(this).find('.theItem').addClass(sty);
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+body{width: 100%;
+    background: url("../images/choseBus.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    font-family:"microsoft yahei";
+   }
+li{list-style:none;}
+a,a:hover{color:#333;}
+a:active{text-decoration:none;}
+a:visited{text-decoration:none;}
+.f-cb:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.choseBusiness{padding: 0;width: 1120px;height: 460px;margin: auto;margin-top: 8%;}
+.choseBusiness p{text-align: center;font-size: 36px;margin: 0;padding: 0;line-height: 100px;color: #fff;}
+.choseBusiness ul{padding: 0;margin: 0;width: 1120px;height: 360px;background: #fff;}
+.choseBusiness ul li{padding: 0;margin: 0;width: 160px;height: 180px;float: left;cursor: pointer;background: #fff;-moz-transition: all .5s;-o-transition: all .5s; -webkit-transition: all .5s;transition: all .5s;}
+.choseBusiness ul li:hover{background: #f7f7f7;-moz-transition: all .5s;-o-transition: all .5s;-webkit-transition: all .5s;transition: all .5s;}
+.choseBusiness ul li a{width: 80px;height: 78px;display: block;margin: 0 auto;margin-top: 37px;background: url("../images/icc.png") no-repeat;}
+.choseBusiness ul li h1{font-size: 14px;text-align: center;font-weight: 500;margin:0;padding-top: 25px;}
+.choseBusiness ul li .chose1{background-position: -1px -1px;}
+.choseBusiness ul li .chose2{background-position: -91px -1px;}
+.choseBusiness ul li .chose3{background-position: -181px -1px;}
+.choseBusiness ul li .chose4{background-position: -271px -1px;}
+.choseBusiness ul li .chose5{background-position: -361px -1px;}
+.choseBusiness ul li .chose6{background-position: -452px -1px;}
+.choseBusiness ul li .chose7{background-position: -541px -1px;}
+.choseBusiness ul li .chose8{background-position: -630px -1px;}
+.choseBusiness ul li .chose9{background-position: -721px -1px;}
+.choseBusiness ul li .chose10{background-position: -811px -1px;}
+.choseBusiness ul li .chose11{background-position: -898px -1px;}
+.choseBusiness ul li .chose12{background-position: -990px 0px;}
+.choseBusiness ul li .chose13{background-position: -1082px -1px;}
+.choseBusiness ul li .chose14{background-position: -1171px -1px;}
+
+.choseBusiness ul li .active1{background-position: -1px -92px;}
+.choseBusiness ul li .active2{background-position: -91px -91px;}
+.choseBusiness ul li .active3{background-position: -181px -92px;}
+.choseBusiness ul li .active4{background-position: -271px -91px;}
+.choseBusiness ul li .active5{background-position: -361px -90px;}
+.choseBusiness ul li .active6{background-position: -452px -92px;}
+.choseBusiness ul li .active7{background-position: -541px -90px;}
+.choseBusiness ul li .active8{background-position: -630px -92px;}
+.choseBusiness ul li .active9{background-position: -721px -91px;}
+.choseBusiness ul li .active10{background-position: -811px -92px;}
+.choseBusiness ul li .active11{background-position: -898px -91px;}
+.choseBusiness ul li .active12{background-position: -990px -90px;}
+.choseBusiness ul li .active13{background-position: -1082px -91px;}
+.choseBusiness ul li .active14{background-position: -1171px -91px;}

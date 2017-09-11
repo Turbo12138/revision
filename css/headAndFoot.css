@@ -1,0 +1,31 @@
+/*index.html*/
+.index-nav{width: 100%;background: #04060C;position: fixed;top: 0px;z-index: 100;opacity:.8;transition: all 0.2s;}
+.index-nav .index-nav-container{height: 80px;width: 1200px;margin: 0 auto;background: #04060C;}
+.index-nav .index-nav-container .logo{display: block;float: left; margin-top: 9px;}
+.index-nav .index-nav-container ul{float: right;}
+.index-nav .index-nav-container ul li{float: left;line-height: 80px;padding: 0 30px;}
+.index-nav .index-nav-container ul li a{color: #fff;padding-bottom: 5px;border-bottom: 2px solid #04060C;}
+.index-nav .index-nav-container ul li .active{padding-bottom: 5px;border-bottom: 2px solid #00ADF3;color: #00ADF3;}
+.index-nav .index-nav-container ul .string{color: #fff;margin-left: 12px;}
+.index-nav .index-nav-container ul .tel{color: #fff;margin-left: 12px;background: url("../images/tel.png") no-repeat;padding-left: 30px;background-size: 13%;}
+.index-nav .feel{    background: url(../images/images/feel-bac.png);width: 53px; height: 53px; display: block; margin-top: 16px;line-height: 53px;text-align: center;}
+
+
+.foot{width: 100%;min-width: 1200px;background: #333333;}
+.foot .foot-container{width: 1200px;margin: 0 auto;height: 380px;background: #333333;}
+.foot .foot-container .foot-all{float: left;width: 600px;height: 380px;}
+.foot .foot-container .foot-all .logo-word{margin-top: 65px;}
+.foot .foot-container .foot-all .mess{margin-top: 48px;}
+.foot .foot-container .foot-all .mess .wechat{width: 144px;float: left;}
+.foot .foot-container .foot-all .mess .cont{float: left;margin-left: 23px;}
+.foot .foot-container .foot-all .mess .wechat p{margin-top: 5px;text-align: center;color: #fff;font-size: 14px;padding-left: 4px;}
+.foot .foot-container .foot-all .mess .cont p{margin-bottom: 10px;color: #fff;font-size: 14px;}
+.foot .foot-container .foot-all .main-menu{margin-top: 156px;}
+.foot .foot-container .foot-all .main-menu li{float: left;width: 84px;}
+.foot .foot-container .foot-all .main-menu li a{color: #fff; text-align: center;display: block;}
+.foot .foot-container .foot-all .main-menu li ul{margin-top: 10px;}
+.foot .foot-container .foot-all .main-menu li ul li{margin-top: 5px;color: #fff;text-align: center;}
+
+.footer{width: 100%;min-width: 1200px;background: #1a1a1a;}
+.footer .footer-container{width: 1200px;margin: 0 auto;height: 70px;background: #1a1a1a;}
+.footer .footer-container p{text-align: center;line-height: 70px;font-size: 12px;color: #fff;}
